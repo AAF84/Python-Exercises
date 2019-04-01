@@ -1,0 +1,60 @@
+# The continue statement - the Great Vowel Eater:
+# Estimated time
+# 
+# 10 minutes
+# Level of difficulty
+# 
+# Easy
+# Objectives
+# 
+# Familiarize the student with:
+# 
+#     using the continue statement in loops;
+#     reflecting real-life situations in computer code.
+# 
+# Scenario
+# 
+# The continue statement is used to skip the current block and move ahead to the next iteration, without executing the statements inside the loop. The two statements can be used with both the while and for loops.
+# 
+# Your task is to design a vowel eater! Write a program with a for loop that utilizes the concept of conditional execution (if-elif-else), and makes use of the continue statement. Your program must:
+# 
+#     ask the user to enter a word in lower-case letters;
+#     use conditional execution and the continue statement to "eat" the vowels a, e, i, o, u from the inputted word;
+#     print each letter to the screen (all consonants and the letter y) on a separate line.
+# 
+# Test your program with the data we've provided for you. Don't change the code in the editor.
+# Test data
+# 
+# Example input
+# python
+# 
+# Example output
+# p y t h n
+# 
+# Example input
+# snake
+# 
+# Example output
+# s n k
+# 
+# Example input
+# rhythm
+# 
+# Example output
+# r h y t h m
+
+word = input("Enter a word in lower-case letters: ")
+
+for letter in word:
+    if letter == "a":
+        continue
+    elif letter == "e":
+        continue
+    elif letter == "i":
+        continue
+    elif letter == "o":
+        continue
+    elif letter == "u":
+        continue
+    else:
+        print(letter," ", end="")
