@@ -1,0 +1,71 @@
+anything = float(input("Give me a number:"))
+something = anything ** 2.0
+print( anything, "to the power of 2 is", something)
+
+lega = float(input("Input first leg length:"))
+legb = float(input("Input second leg length:"))
+hypo = (lega **2 + legb **2) ** .5
+print("Hypotenuse length is", hypo)
+
+fnam = input("May I have your first name, please?")
+lnam = input("May I have your last name, please?")
+print("Thank you.")
+print("Your name is " + lnam + "." +fnam +" " + lnam + ".")
+print("ten"*5)
+
+print("+" +10*'-'+'+')
+print(("|"+' '*10+'|\n')*5,end='')
+print("+" + 10*'-' + '+')
+
+a=float(input("input a float value for variable a here: "))
+b=float(input("input a float value for variable b here: "))
+print("a+b=",a+b,"\na-b=",a-b,"\na*b=",a*b,"\na/b=",a/b)
+print("That's all, folks!")
+
+x = float(input("Enter value for x: "))
+y = (1 / (x + 1 / (x + 1 / (x + 1 / x))))
+print("y =",y)
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+print((hour+((mins+dura)//60))%24,":",(mins+dura)%60)
+
+n=int(input("Input an integer no less than 100: "))
+print(n>=100)
+
+plant = input("Input the best plant ever: ")
+if plant == "Spathiphyllum":
+    print("Spathiphyllum is the best plant ever!")
+else:
+    print("No, I want a real Spathiphyllum...!")
+    
+income = float(input("Enter the annual income: "))
+if income>85528:
+    tax = 14839.02 + 0.32*(income - 85528)
+elif 0.18*income - 556.02 <0:
+    tax = 0
+else:
+    tax = 0.18*income - 556.02
+tax = round(tax,0)
+print("The tax is:", tax)
+
+year = int(input("Enter a year: "))
+if year % 4 != 0:
+    print("Common Year")
+elif year % 100 != 0:
+    print("Leap Year")
+elif year % 400 != 0:
+    print("Common Year")
+else:
+    print("Leap Year")
+    
+secret_number = 8
+
+print("Welcome to my game, muggle!\nEnter an integer number and guess what number I've picked for you!\nI'll give you a hint: it's an integer number from 0 to 10.\n")
+number = -1
+while number != secret_number:
+    number = int(input("Enter an integer here: "))
+    print("No, that's not the number I've picked for you. Try again!")
+else:
+    print(number,". Well done! That's the number I've chosen for you! You are free now.")
